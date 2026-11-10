@@ -52,4 +52,4 @@ fp-info-cache
 *.kicad_prl
 
 # VS Code workspace
-.code-workspace
+*.code-workspace
