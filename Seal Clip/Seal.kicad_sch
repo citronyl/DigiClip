@@ -1612,24 +1612,26 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -6.35 11.43 0)
+			(property "Reference" "U2"
+				(at 11.43 1.2701 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "W25Q128JVS"
-				(at 7.62 11.43 0)
+				(at 11.43 -1.2699 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
@@ -1737,7 +1739,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -10.16 -2.54 0)
 					(length 2.54)
 					(name "~{WP}/IO_{2}"
@@ -1809,7 +1811,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -10.16 -5.08 0)
 					(length 2.54)
 					(name "~{HOLD}/~{RESET}/IO_{3}"
@@ -2966,12 +2968,6 @@
 		(uuid "1ff86132-507d-4721-bac3-47133703744c")
 	)
 	(junction
-		(at 158.75 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2100c46f-8b18-46ab-947e-81bce2b2062e")
-	)
-	(junction
 		(at 54.61 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3056,6 +3052,12 @@
 		(uuid "7dfa124c-19be-4652-b350-5a69f9584f59")
 	)
 	(junction
+		(at 54.61 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "859e7053-276b-4da8-84b5-1476d6b0ab97")
+	)
+	(junction
 		(at 97.79 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3108,6 +3110,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4014a27-ea62-4017-92e1-fc913eff1139")
+	)
+	(junction
+		(at 156.21 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc793c43-7465-4047-947f-c90d8f0f67a3")
 	)
 	(junction
 		(at 115.57 77.47)
@@ -3395,16 +3403,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 67.31) (xy 158.75 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36232ee5-8d84-44a7-8746-1e35f98d6c15")
-	)
-	(wire
-		(pts
 			(xy 97.79 115.57) (xy 97.79 119.38)
 		)
 		(stroke
@@ -3552,6 +3550,16 @@
 			(type default)
 		)
 		(uuid "59f7ad4c-424c-4f90-9742-a8b756a689ea")
+	)
+	(wire
+		(pts
+			(xy 44.45 67.31) (xy 54.61 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eb81061-b059-4d60-bba4-aacffa8fa66d")
 	)
 	(wire
 		(pts
@@ -3912,6 +3920,16 @@
 			(type default)
 		)
 		(uuid "b1a259c0-3249-49ab-9e21-00a796213b56")
+	)
+	(wire
+		(pts
+			(xy 54.61 67.31) (xy 54.61 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ef51fe-085d-427d-b481-da3c9c1e6c58")
 	)
 	(wire
 		(pts
@@ -5684,6 +5702,84 @@
 			(project "Seal"
 				(path "/50278986-a0b3-4869-86f2-61d2e663ef47"
 					(reference "#PWR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 156.21 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e90ecbb-0184-4152-b2d9-571836c0dfd8")
+		(property "Reference" "#FLG05"
+			(at 156.21 75.565 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 156.21 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76654128-d7b6-4e72-bdd0-52fb0c94537c")
+		)
+		(instances
+			(project "Seal"
+				(path "/50278986-a0b3-4869-86f2-61d2e663ef47"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
