@@ -2974,12 +2974,6 @@
 		(uuid "29217792-5933-4a0f-acf9-a3257a6e7879")
 	)
 	(junction
-		(at 156.21 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3af996e4-7a47-4914-86e8-519a52b06eb8")
-	)
-	(junction
 		(at 190.5 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3883,16 +3877,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 77.47) (xy 158.75 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8d1a5a5-9e92-496a-8144-9bb0a64841e8")
-	)
-	(wire
-		(pts
 			(xy 190.5 33.02) (xy 203.2 33.02)
 		)
 		(stroke
@@ -4033,7 +4017,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 77.47) (xy 148.59 77.47)
+			(xy 147.32 77.47) (xy 158.75 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4461,86 +4445,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 152.4 77.47 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "248c2781-1971-4fac-9d0e-e7df163e9d66")
-		(property "Reference" "R5"
-			(at 152.4 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 152.4 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 152.4 79.248 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 152.4 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65148a4c-349c-49c2-979f-9c7a9f035f47")
-		)
-		(pin "2"
-			(uuid "3cd4d7e1-af1d-4d13-9fc6-29d682895df4")
-		)
-		(instances
-			(project "Seal"
-				(path "/50278986-a0b3-4869-86f2-61d2e663ef47"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 92.71 124.46 270)
 		(unit 1)
@@ -4646,7 +4550,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470k"
+		(property "Value" "1k"
 			(at 186.69 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5103,7 +5007,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 163.83 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5478,84 +5382,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 156.21 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ac03bc8-8237-422b-bc04-78d7e40911e4")
-		(property "Reference" "#FLG05"
-			(at 156.21 75.565 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 156.21 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 156.21 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0b382b9-69e8-45a5-857f-9142c2256527")
-		)
-		(instances
-			(project "Seal"
-				(path "/50278986-a0b3-4869-86f2-61d2e663ef47"
-					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 179.07 67.31 90)
 		(unit 1)
@@ -5818,7 +5644,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 236.22 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5900,7 +5726,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "100k"
 			(at 128.27 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6108,7 +5934,7 @@
 				)
 			)
 		)
-		(property "Value" "PAM8302AAD"
+		(property "Value" "PAM8302AASCR"
 			(at 215.9 42.8146 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6140,7 +5966,7 @@
 				)
 			)
 		)
-		(property "Description" "2.5W Filterless Class-D Mono Audio Amplifier, SOIC-8"
+		(property "Description" "2.5W Filterless Class-D Mono Audio Amplifier, MSOP-8"
 			(at 200.66 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -6488,7 +6314,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "2.2nF"
 			(at 129.54 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6559,7 +6385,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e301cf31-7264-4d7b-baf4-97f9afd2efa0")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 209.55 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6621,7 +6447,7 @@
 		(instances
 			(project "Seal"
 				(path "/50278986-a0b3-4869-86f2-61d2e663ef47"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6650,7 +6476,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1nF"
+		(property "Value" "100nF"
 			(at 83.82 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
