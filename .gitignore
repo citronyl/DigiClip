@@ -50,6 +50,3 @@ fp-info-cache
 # Local project settings
 >>>>>>> 6ef8cfe12ae39d43b5952059e605be25f46d1ade
 *.kicad_prl
-
-# VS Code workspace
-*.code-workspace
